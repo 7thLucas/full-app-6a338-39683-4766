@@ -13,11 +13,13 @@ Running a restaurant involves too many moving parts managed in too many places:
 - **Inventory blind spots** — manual counts, surprise stock-outs, and avoidable waste
 
 ## Users
+Primary users are **managers and floor staff** — the people who deal with scheduling day-to-day.
+
 | Role | Day-to-day use |
 |------|----------------|
-| **Owner** | Full visibility across all operations; configures the app, sets policies, reviews reports |
-| **Manager** | Manages the floor — handles walk-ins, confirms reservations, coordinates staff shifts |
-| **Floor Staff** | Views their schedule, updates table status, flags low inventory |
+| **Manager** (primary) | Builds rotas, assigns shifts, handles swap requests, pushes schedule updates to staff |
+| **Floor Staff** (primary) | Views their schedule, confirms shifts, requests changes — without needing a group chat |
+| **Owner** (oversight) | Full visibility across all operations; configures the app, sets policies, reviews reports |
 
 ## Positioning
 A calm, operational command centre for independent restaurants and small chains that want to run tighter without adding administrative overhead. Not a startup toy — a working tool that earns its place alongside the POS.
