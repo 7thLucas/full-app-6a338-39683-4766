@@ -1,0 +1,81 @@
+<style>
+.mode-landscape .sl-columns { flex-direction: row; }
+.mode-portrait .sl-columns { flex-direction: column; }
+.mode-landscape .sl-persona-col { width: 33.333%; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-10">
+
+    <!-- Slide header + persona chips -->
+    <div class="flex items-start justify-between mb-5">
+      <div>
+        <span class="text-xs font-bold tracking-widest text-amber-600 uppercase">Core Features</span>
+        <h2 class="text-2xl font-bold text-slate-900 mt-1">Something useful for everyone on the team.</h2>
+      </div>
+      <div class="flex gap-2 flex-shrink-0 ml-6 mt-1">
+        <span class="px-3 py-1 bg-slate-900 text-white text-xs font-semibold rounded-full">Owner</span>
+        <span class="px-3 py-1 bg-amber-500 text-white text-xs font-semibold rounded-full">Manager</span>
+        <span class="px-3 py-1 bg-amber-100 text-amber-800 text-xs font-semibold rounded-full">Floor Staff</span>
+      </div>
+    </div>
+
+    <!-- Three persona columns, 2 cards each -->
+    <div class="sl-columns flex flex-1 gap-5">
+
+      <!-- Owner -->
+      <div class="sl-persona-col flex flex-col gap-3">
+        <div class="flex items-center gap-2 mb-1">
+          <div class="w-2 h-2 rounded-full bg-slate-900"></div>
+          <span class="text-xs font-bold text-slate-600 uppercase tracking-wide">Owner</span>
+        </div>
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 flex-1 flex flex-col">
+          <span class="text-2xl mb-2">📊</span>
+          <p class="text-sm font-semibold text-slate-900 mb-1">Operations Dashboard</p>
+          <p class="text-xs text-slate-500 leading-relaxed">Full visibility across reservations, staff, and inventory — at a single glance</p>
+        </div>
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 flex-1 flex flex-col">
+          <span class="text-2xl mb-2">📈</span>
+          <p class="text-sm font-semibold text-slate-900 mb-1">Reports &amp; Staff Management</p>
+          <p class="text-xs text-slate-500 leading-relaxed">Add staff, assign roles, and review reservation and inventory trends over time</p>
+        </div>
+      </div>
+
+      <!-- Manager -->
+      <div class="sl-persona-col flex flex-col gap-3">
+        <div class="flex items-center gap-2 mb-1">
+          <div class="w-2 h-2 rounded-full bg-amber-500"></div>
+          <span class="text-xs font-bold text-amber-700 uppercase tracking-wide">Manager</span>
+        </div>
+        <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 flex-1 flex flex-col">
+          <span class="text-2xl mb-2">🗓️</span>
+          <p class="text-sm font-semibold text-slate-900 mb-1">Reservation Board</p>
+          <p class="text-xs text-slate-500 leading-relaxed">Live booking view with walk-in queue, cover count, and table assignment</p>
+        </div>
+        <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 flex-1 flex flex-col">
+          <span class="text-2xl mb-2">🔄</span>
+          <p class="text-sm font-semibold text-slate-900 mb-1">Shift Scheduler</p>
+          <p class="text-xs text-slate-500 leading-relaxed">Build rotas, handle swap requests, and push instant schedule updates to staff</p>
+        </div>
+      </div>
+
+      <!-- Floor Staff -->
+      <div class="sl-persona-col flex flex-col gap-3">
+        <div class="flex items-center gap-2 mb-1">
+          <div class="w-2 h-2 rounded-full bg-amber-300"></div>
+          <span class="text-xs font-bold text-amber-700 uppercase tracking-wide">Floor Staff</span>
+        </div>
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 flex-1 flex flex-col">
+          <span class="text-2xl mb-2">📅</span>
+          <p class="text-sm font-semibold text-slate-900 mb-1">My Shifts</p>
+          <p class="text-xs text-slate-500 leading-relaxed">See your schedule, confirm shifts, and request changes — no WhatsApp needed</p>
+        </div>
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 flex-1 flex flex-col">
+          <span class="text-2xl mb-2">📦</span>
+          <p class="text-sm font-semibold text-slate-900 mb-1">Stock Flags &amp; Table Status</p>
+          <p class="text-xs text-slate-500 leading-relaxed">Flag low inventory and mark tables as seated or cleared — in real time</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
