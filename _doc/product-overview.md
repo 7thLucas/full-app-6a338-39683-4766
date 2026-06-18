@@ -28,7 +28,7 @@ A calm, operational command centre for independent restaurants and small chains 
 Practical, warm, reliable. Speaks in restaurant-operator language, not software-team language. Mobile-first; designed for high-turnover staff with minimal training required.
 
 ## App Name
-TBD — to be confirmed during onboarding
+**MiCasa** — warm, personal; evokes the restaurant as the owner's house
 
 ## MVP Focus (First Feature)
 **Staff scheduling** — managers build rotas, assign shifts, and push instant updates to floor staff. Floor staff see their schedule and confirm shifts without a group chat.
