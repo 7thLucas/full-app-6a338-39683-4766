@@ -38,3 +38,18 @@ Practical, warm, reliable. Speaks in restaurant-operator language, not software-
 - Real-time data shared across the full operation
 - Mobile-first; low training overhead for high-turnover staff
 - Replace friction points (group chats, paper logs, spreadsheets) with one source of truth
+
+## As Built (Initial Generation)
+**Design system**: Terracotta `#C1440E` primary · Amber `#F5A623` accent · Cream `#FAF7F2` background · Role-coded shift colours (chef = blue, waiter = green, bar = amber, host = purple, kitchen = teal)
+
+**App routes**:
+- `/` — Dashboard: today's shifts, upcoming shifts, quick stats
+- `/schedule` — Weekly rota (horizontal scroll, day columns) + list view with shift confirm/decline
+- `/team` — Manager-only: add team members, assign roles, view shift counts
+- `/profile` — Edit display name/phone, shift history stats, sign out
+
+**Auth**: JWT cookies · Role-based access: `admin` (manager) vs `authenticated` (floor staff) · Default manager login: `manager@micasa.app` / `MiCasa2026!`
+
+**Seed data**: 5 sample staff (Sofia Reyes — Chef, Marco Diaz — Waiter, Lena Park — Bar, James Obi — Host, Ana Ferreira — Kitchen) · 9 demo shifts across the current week
+
+**Data model**: `tbl_shifts` (staff ID, role, date, start/end time, status: pending/confirmed/declined) · `tbl_staff_profiles` · `tbl_users`
