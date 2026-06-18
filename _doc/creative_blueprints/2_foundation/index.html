@@ -1,0 +1,90 @@
+<style>
+.mode-landscape .sl-columns { flex-direction: row; }
+.mode-portrait .sl-columns { flex-direction: column; }
+.mode-landscape .sl-problem { width: 46%; }
+.mode-landscape .sl-solution { width: 54%; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-10">
+
+    <!-- Slide header -->
+    <div class="mb-5">
+      <span class="text-xs font-bold tracking-widest text-amber-600 uppercase">Why It Exists</span>
+      <h2 class="text-2xl font-bold text-slate-900 mt-1">The gap between a busy restaurant and a well-run one.</h2>
+    </div>
+
+    <!-- Two-column body -->
+    <div class="sl-columns flex flex-1 gap-5">
+
+      <!-- Problem panel (dark) -->
+      <div class="sl-problem bg-slate-900 rounded-2xl p-7 flex flex-col">
+        <div class="w-6 h-px bg-amber-500 mb-4"></div>
+        <h3 class="text-base font-bold text-white mb-2">The Problem</h3>
+        <p class="text-slate-400 text-sm leading-relaxed mb-5">Three critical operations — each managed in a different place, none of them talking to each other.</p>
+        <div class="space-y-4 flex-1">
+          <div class="flex gap-3">
+            <span class="text-amber-400 font-bold text-xs mt-0.5 w-5 flex-shrink-0">01</span>
+            <div>
+              <p class="text-white text-sm font-semibold">Walk-in &amp; reservation chaos</p>
+              <p class="text-slate-400 text-xs mt-0.5 leading-relaxed">No single view of bookings, covers, and wait times</p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <span class="text-amber-400 font-bold text-xs mt-0.5 w-5 flex-shrink-0">02</span>
+            <div>
+              <p class="text-white text-sm font-semibold">Staff coordination friction</p>
+              <p class="text-slate-400 text-xs mt-0.5 leading-relaxed">Shift changes live in group chats; no one has the latest schedule</p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <span class="text-amber-400 font-bold text-xs mt-0.5 w-5 flex-shrink-0">03</span>
+            <div>
+              <p class="text-white text-sm font-semibold">Inventory blind spots</p>
+              <p class="text-slate-400 text-xs mt-0.5 leading-relaxed">Manual counts, surprise stock-outs, and avoidable waste</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Solution panel (amber-tinted) -->
+      <div class="sl-solution bg-amber-50 border border-amber-100 rounded-2xl p-7 flex flex-col">
+        <div class="w-6 h-px bg-amber-500 mb-4"></div>
+        <h3 class="text-base font-bold text-slate-900 mb-2">The Solution</h3>
+        <p class="text-slate-600 text-sm leading-relaxed mb-5">A single operational hub where the owner, managers, and floor staff all see the same picture — in real time.</p>
+        <div class="space-y-4 flex-1">
+          <div class="flex gap-3 items-start">
+            <div class="w-5 h-5 rounded-full bg-amber-500 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <span class="text-white text-xs font-bold leading-none">✓</span>
+            </div>
+            <div>
+              <p class="text-slate-800 text-sm font-semibold">Live reservation &amp; walk-in board</p>
+              <p class="text-slate-500 text-xs mt-0.5 leading-relaxed">Every booking, cover count, and wait time in one view</p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-start">
+            <div class="w-5 h-5 rounded-full bg-amber-500 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <span class="text-white text-xs font-bold leading-none">✓</span>
+            </div>
+            <div>
+              <p class="text-slate-800 text-sm font-semibold">Staff scheduling &amp; instant updates</p>
+              <p class="text-slate-500 text-xs mt-0.5 leading-relaxed">Shifts confirmed and communicated without the group chat</p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-start">
+            <div class="w-5 h-5 rounded-full bg-amber-500 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <span class="text-white text-xs font-bold leading-none">✓</span>
+            </div>
+            <div>
+              <p class="text-slate-800 text-sm font-semibold">Smart inventory tracking</p>
+              <p class="text-slate-500 text-xs mt-0.5 leading-relaxed">Real-time stock levels with automatic low-inventory alerts</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-5 bg-amber-100 rounded-xl p-3">
+          <p class="text-amber-900 text-xs font-semibold">One app. Every role. The whole operation — visible at once.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
