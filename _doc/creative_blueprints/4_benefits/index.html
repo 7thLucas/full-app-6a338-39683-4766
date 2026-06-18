@@ -1,0 +1,55 @@
+<style>
+.mode-landscape .sl-grid { grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(2, 1fr); }
+.mode-portrait .sl-grid { grid-template-columns: repeat(1, 1fr); }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-10">
+
+    <!-- Slide header -->
+    <div class="mb-5">
+      <span class="text-xs font-bold tracking-widest text-amber-600 uppercase">The Payoff</span>
+      <h2 class="text-2xl font-bold text-slate-900 mt-1">Less chaos. More covers. A calmer floor.</h2>
+    </div>
+
+    <!-- 2 × 2 metric card grid -->
+    <div class="sl-grid grid flex-1 gap-4">
+
+      <!-- Card 1: Reservations -->
+      <div class="bg-slate-900 rounded-2xl p-6 flex flex-col justify-between">
+        <div>
+          <span class="text-xs font-bold text-amber-400 uppercase tracking-wide">Reservations</span>
+          <p class="text-3xl font-black text-white mt-2 leading-tight">Fewer<br>no-shows</p>
+        </div>
+        <p class="text-slate-400 text-sm mt-3 leading-relaxed">Confirmed bookings replace missed calls. Walk-in queue visible to the whole team — not just the host.</p>
+      </div>
+
+      <!-- Card 2: Staff coordination -->
+      <div class="bg-amber-500 rounded-2xl p-6 flex flex-col justify-between">
+        <div>
+          <span class="text-xs font-bold text-amber-100 uppercase tracking-wide">Staff Coordination</span>
+          <p class="text-3xl font-black text-white mt-2 leading-tight">Shifts sorted<br>in seconds</p>
+        </div>
+        <p class="text-amber-100 text-sm mt-3 leading-relaxed">Managers build rotas and push instant updates. Staff see their schedule without a single message.</p>
+      </div>
+
+      <!-- Card 3: Inventory -->
+      <div class="bg-amber-50 border border-amber-200 rounded-2xl p-6 flex flex-col justify-between">
+        <div>
+          <span class="text-xs font-bold text-amber-700 uppercase tracking-wide">Inventory</span>
+          <p class="text-3xl font-black text-slate-900 mt-2 leading-tight">No more<br>stock-outs</p>
+        </div>
+        <p class="text-slate-600 text-sm mt-3 leading-relaxed">Real-time counts and low-stock alerts mean you order what you need — not what you guess.</p>
+      </div>
+
+      <!-- Card 4: Operations -->
+      <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 flex flex-col justify-between">
+        <div>
+          <span class="text-xs font-bold text-slate-500 uppercase tracking-wide">Operations</span>
+          <p class="text-3xl font-black text-slate-900 mt-2 leading-tight">One source<br>of truth</p>
+        </div>
+        <p class="text-slate-600 text-sm mt-3 leading-relaxed">Owner, managers, and staff all work from the same live data — no conflicting info, no 11pm calls.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
