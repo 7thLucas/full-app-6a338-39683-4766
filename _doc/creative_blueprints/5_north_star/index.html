@@ -20,23 +20,27 @@
 
     <div class="sl-columns flex flex-1 gap-5">
 
-      <!-- Left: WVO definition -->
+      <!-- Left: WVO definition — Shifts leads -->
       <div class="sl-left bg-slate-900 rounded-2xl p-7 flex flex-col">
         <p class="text-xs font-bold text-amber-400 uppercase tracking-wide mb-3">Weekly Verified Operations</p>
         <p class="text-slate-300 text-xs leading-relaxed mb-5">A verified operation is a domain event the app exists to perform — completed by a real user in the live app. Clicks and logins do not count.</p>
         <div class="space-y-4 flex-1">
-          <div class="flex gap-3 items-start">
-            <span class="text-amber-400 font-bold text-sm flex-shrink-0 mt-0.5">①</span>
+          <!-- ① Shifts first — MVP operation -->
+          <div class="flex gap-3 items-start bg-amber-500 rounded-xl p-3 -mx-1">
+            <span class="text-white font-bold text-sm flex-shrink-0 mt-0.5">①</span>
             <div>
-              <p class="text-white text-sm font-semibold">Reservation confirmed</p>
-              <p class="text-slate-400 text-xs mt-0.5 leading-relaxed">A booking or walk-in seated through the app</p>
+              <div class="flex items-center gap-2 mb-0.5">
+                <p class="text-white text-sm font-semibold">Shift assigned</p>
+                <span class="text-xs bg-white text-amber-700 font-bold px-1.5 py-0.5 rounded-full">MVP</span>
+              </div>
+              <p class="text-amber-100 text-xs leading-relaxed">A staff shift confirmed and communicated via the app</p>
             </div>
           </div>
           <div class="flex gap-3 items-start">
             <span class="text-amber-400 font-bold text-sm flex-shrink-0 mt-0.5">②</span>
             <div>
-              <p class="text-white text-sm font-semibold">Shift assigned</p>
-              <p class="text-slate-400 text-xs mt-0.5 leading-relaxed">A staff shift confirmed and communicated via the app</p>
+              <p class="text-white text-sm font-semibold">Reservation confirmed</p>
+              <p class="text-slate-400 text-xs mt-0.5 leading-relaxed">A booking or walk-in seated through the app</p>
             </div>
           </div>
           <div class="flex gap-3 items-start">
@@ -53,10 +57,19 @@
         </div>
       </div>
 
-      <!-- Right: formula with assumption chips -->
+      <!-- Right: formula — Shifts row leads -->
       <div class="sl-right bg-amber-50 border border-amber-100 rounded-2xl p-7 flex flex-col">
         <p class="text-xs font-bold text-amber-700 uppercase tracking-wide mb-4">Projection Formula — fill in your numbers</p>
         <div class="space-y-3 flex-1">
+
+          <!-- Shifts row — primary, highlighted -->
+          <div class="bg-amber-500 rounded-xl p-3 border border-amber-400">
+            <div class="flex items-center justify-between mb-1">
+              <p class="text-white text-sm font-semibold">Shifts assigned / week</p>
+              <span class="text-xs bg-white text-amber-700 px-2 py-0.5 rounded-full font-semibold flex-shrink-0 ml-2">Assumption — adjust this</span>
+            </div>
+            <p class="text-amber-100 text-xs leading-relaxed">[ staff count ] × [ shifts per person / week ]</p>
+          </div>
 
           <div class="bg-white rounded-xl p-3 border border-amber-100">
             <div class="flex items-center justify-between mb-1">
@@ -64,14 +77,6 @@
               <span class="text-xs bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full font-semibold flex-shrink-0 ml-2">Assumption — adjust this</span>
             </div>
             <p class="text-slate-500 text-xs leading-relaxed">[ covers per week ] confirmed through the app</p>
-          </div>
-
-          <div class="bg-white rounded-xl p-3 border border-amber-100">
-            <div class="flex items-center justify-between mb-1">
-              <p class="text-slate-800 text-sm font-semibold">Shifts assigned / week</p>
-              <span class="text-xs bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full font-semibold flex-shrink-0 ml-2">Assumption — adjust this</span>
-            </div>
-            <p class="text-slate-500 text-xs leading-relaxed">[ staff count ] × [ shifts per person / week ]</p>
           </div>
 
           <div class="bg-white rounded-xl p-3 border border-amber-100">
@@ -86,7 +91,7 @@
 
         <div class="mt-4 bg-amber-100 rounded-xl p-3">
           <p class="text-amber-900 text-xs font-bold mb-1">Total WVO = ① + ② + ③ per week</p>
-          <p class="text-amber-700 text-xs leading-relaxed">Each operation represents time saved, a no-show avoided, or waste prevented. Update the assumptions above with your real numbers to see your projected weekly impact.</p>
+          <p class="text-amber-700 text-xs leading-relaxed">Each shift assigned is a coordination problem solved without a message. Update the assumptions with your real numbers to see your projected weekly impact.</p>
         </div>
       </div>
 
