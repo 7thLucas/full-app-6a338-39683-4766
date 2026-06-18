@@ -1,0 +1,44 @@
+<style>
+.mode-landscape .sl-layout { flex-direction: row; }
+.mode-portrait .sl-layout { flex-direction: column; }
+.mode-landscape .sl-col-left { width: 54%; }
+.mode-landscape .sl-col-right { width: 46%; }
+.mode-portrait .sl-col-left { width: 100%; height: 60%; }
+.mode-portrait .sl-col-right { width: 100%; height: 40%; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full">
+
+    <!-- Left: content column -->
+    <div class="sl-col-left flex flex-col justify-between p-12 bg-white">
+      <div>
+        <div class="flex items-center gap-3 mb-10">
+          <div class="w-6 h-px bg-amber-500"></div>
+          <span class="text-xs font-bold tracking-widest text-amber-600 uppercase">Restaurant Management</span>
+        </div>
+        <h1 class="font-black text-slate-900 leading-none mb-6" style="font-size: 3.25rem; line-height: 1.05;">
+          Run Your<br>Restaurant.<br>Not After It.
+        </h1>
+        <p class="text-base text-slate-500 leading-relaxed" style="max-width: 270px;">
+          One app for reservations, staff, and inventory — built for every person on the floor.
+        </p>
+      </div>
+      <div>
+        <div class="w-8 h-px bg-amber-400 mb-5"></div>
+        <data-attribution />
+      </div>
+    </div>
+
+    <!-- Right: image panel -->
+    <div class="sl-col-right relative overflow-hidden">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=warm%20upscale%20restaurant%20interior%20evening%20service%20staff%20coordinating%20elegant%20lighting%20editorial%20photography"
+        alt="Restaurant in service"
+        class="w-full h-full object-cover"
+      />
+      <!-- Gradient blends image into white content column -->
+      <div class="absolute inset-0 bg-gradient-to-r from-white to-transparent"></div>
+    </div>
+
+  </div>
+</section>
