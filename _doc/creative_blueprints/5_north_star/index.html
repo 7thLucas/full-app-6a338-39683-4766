@@ -1,0 +1,95 @@
+<style>
+.mode-landscape .sl-columns { flex-direction: row; }
+.mode-portrait .sl-columns { flex-direction: column; }
+.mode-landscape .sl-left { width: 46%; }
+.mode-landscape .sl-right { width: 54%; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-10">
+
+    <!-- Slide header -->
+    <div class="flex items-start justify-between mb-5">
+      <div>
+        <span class="text-xs font-bold tracking-widest text-amber-600 uppercase">North Star</span>
+        <h2 class="text-2xl font-bold text-slate-900 mt-1">The one number that tells you the app is working.</h2>
+      </div>
+      <span class="text-xs font-semibold text-slate-500 bg-slate-100 px-3 py-1.5 rounded-full flex-shrink-0 ml-5 mt-1 whitespace-nowrap">
+        Projected impact — based on your inputs
+      </span>
+    </div>
+
+    <div class="sl-columns flex flex-1 gap-5">
+
+      <!-- Left: WVO definition -->
+      <div class="sl-left bg-slate-900 rounded-2xl p-7 flex flex-col">
+        <p class="text-xs font-bold text-amber-400 uppercase tracking-wide mb-3">Weekly Verified Operations</p>
+        <p class="text-slate-300 text-xs leading-relaxed mb-5">A verified operation is a domain event the app exists to perform — completed by a real user in the live app. Clicks and logins do not count.</p>
+        <div class="space-y-4 flex-1">
+          <div class="flex gap-3 items-start">
+            <span class="text-amber-400 font-bold text-sm flex-shrink-0 mt-0.5">①</span>
+            <div>
+              <p class="text-white text-sm font-semibold">Reservation confirmed</p>
+              <p class="text-slate-400 text-xs mt-0.5 leading-relaxed">A booking or walk-in seated through the app</p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-start">
+            <span class="text-amber-400 font-bold text-sm flex-shrink-0 mt-0.5">②</span>
+            <div>
+              <p class="text-white text-sm font-semibold">Shift assigned</p>
+              <p class="text-slate-400 text-xs mt-0.5 leading-relaxed">A staff shift confirmed and communicated via the app</p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-start">
+            <span class="text-amber-400 font-bold text-sm flex-shrink-0 mt-0.5">③</span>
+            <div>
+              <p class="text-white text-sm font-semibold">Inventory check completed</p>
+              <p class="text-slate-400 text-xs mt-0.5 leading-relaxed">A stock count recorded or low-stock flag raised in the app</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-4 bg-slate-800 rounded-xl p-3">
+          <p class="text-amber-400 text-xs font-bold">WVO = ① + ② + ③ per week</p>
+          <p class="text-slate-400 text-xs mt-1">Watch this number grow as your team adopts the app.</p>
+        </div>
+      </div>
+
+      <!-- Right: formula with assumption chips -->
+      <div class="sl-right bg-amber-50 border border-amber-100 rounded-2xl p-7 flex flex-col">
+        <p class="text-xs font-bold text-amber-700 uppercase tracking-wide mb-4">Projection Formula — fill in your numbers</p>
+        <div class="space-y-3 flex-1">
+
+          <div class="bg-white rounded-xl p-3 border border-amber-100">
+            <div class="flex items-center justify-between mb-1">
+              <p class="text-slate-800 text-sm font-semibold">Reservations / week</p>
+              <span class="text-xs bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full font-semibold flex-shrink-0 ml-2">Assumption — adjust this</span>
+            </div>
+            <p class="text-slate-500 text-xs leading-relaxed">[ covers per week ] confirmed through the app</p>
+          </div>
+
+          <div class="bg-white rounded-xl p-3 border border-amber-100">
+            <div class="flex items-center justify-between mb-1">
+              <p class="text-slate-800 text-sm font-semibold">Shifts assigned / week</p>
+              <span class="text-xs bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full font-semibold flex-shrink-0 ml-2">Assumption — adjust this</span>
+            </div>
+            <p class="text-slate-500 text-xs leading-relaxed">[ staff count ] × [ shifts per person / week ]</p>
+          </div>
+
+          <div class="bg-white rounded-xl p-3 border border-amber-100">
+            <div class="flex items-center justify-between mb-1">
+              <p class="text-slate-800 text-sm font-semibold">Inventory checks / week</p>
+              <span class="text-xs bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full font-semibold flex-shrink-0 ml-2">Assumption — adjust this</span>
+            </div>
+            <p class="text-slate-500 text-xs leading-relaxed">[ checks per week ] across all stock categories</p>
+          </div>
+
+        </div>
+
+        <div class="mt-4 bg-amber-100 rounded-xl p-3">
+          <p class="text-amber-900 text-xs font-bold mb-1">Total WVO = ① + ② + ③ per week</p>
+          <p class="text-amber-700 text-xs leading-relaxed">Each operation represents time saved, a no-show avoided, or waste prevented. Update the assumptions above with your real numbers to see your projected weekly impact.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
