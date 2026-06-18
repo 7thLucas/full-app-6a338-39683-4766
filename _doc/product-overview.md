@@ -31,7 +31,7 @@ Practical, warm, reliable. Speaks in restaurant-operator language, not software-
 TBD — to be confirmed during onboarding
 
 ## MVP Focus (First Feature)
-TBD — to be confirmed during onboarding
+**Staff scheduling** — managers build rotas, assign shifts, and push instant updates to floor staff. Floor staff see their schedule and confirm shifts without a group chat.
 
 ## Strategic Principles
 - All roles (owner, manager, staff) find their daily actions within one tap
